@@ -17,7 +17,7 @@ public class SparkProgram
         
         context = new JavaSparkContext(config);
         
-        JavaRDD<String> file = context.textFile("files/ocorrencias_criminais.csv");
+        JavaRDD<String> file = context.textFile("hdfs://<address>");
             
         JavaPairRDD<String, Integer> crimesPorAno = file.mapToPair(x ->
         {
