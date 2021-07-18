@@ -1,2 +1,2 @@
 # sparkMR
-Project realized about Apache Spark
+Simple project - Apache Spark
